@@ -13,9 +13,11 @@ extra-source-files:
 
 dependencies:
   - base >= 4.7 && < 5
+  - aeson
   - binary
   - bytestring
   - http-types
+  - mtl
   - protolude
   - resourcet
   - text
@@ -28,6 +30,8 @@ executables:
   webby:
     source-dirs:      src
     main:             Main.hs
+    dependencies:
+      - conduit
 
 default-extensions:
   - NoImplicitPrelude
