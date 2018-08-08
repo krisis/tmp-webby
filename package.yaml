@@ -1,0 +1,35 @@
+name:                webby
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/githubuser/webby#readme
+license:             BSD3
+author:              Aditya Manthramurthy
+maintainer:          aditya@minio.io
+copyright:           2018 Aditya Manthramurthy
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - binary
+  - bytestring
+  - http-types
+  - protolude
+  - resourcet
+  - text
+  - unliftio
+  - wai
+  - wai-extra
+  - warp
+
+executables:
+  webby:
+    source-dirs:      src
+    main:             Main.hs
+
+default-extensions:
+  - NoImplicitPrelude
+  - OverloadedStrings
+  - TupleSections
